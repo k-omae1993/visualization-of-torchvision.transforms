@@ -5,6 +5,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from torchvision.transforms.transforms import Normalize
 from change import change
+import matplotlib
+matplotlib.use('TkAgg')
+
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="parser for visualization")
