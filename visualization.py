@@ -5,8 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from torchvision.transforms.transforms import Normalize
 from change import change
-import matplotlib
-matplotlib.use('TkAgg')
+
 
 
 
@@ -89,17 +88,7 @@ if __name__ == '__main__':
     pre_img = change(pre_img)
 
     #matplotlibで変更前と変更後の画像の可視化
-    fig1 = plt.figure()
-    ax1 = fig1.add_subplot(111)
-    ax1.set_title('before preprocessing')
-    mg1 = ax1.imshow(before_img)
-
-    fig2 = plt.figure()
-    ax2 = fig2.add_subplot(111)
-    ax2.set_title('after prerprocessing')
-    img2 = ax2.imshow(pre_img)
     
-    
-    #plt.subplot(121).imshow(before_img)
-    #plt.subplot(122).imshow(pre_img)
+    plt.subplot(121).imshow(before_img)
+    plt.subplot(122).imshow(pre_img)
     plt.show()
